@@ -17,7 +17,7 @@ public class TextFileServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response){
 
-        InputStream file = getServletContext().getResourceAsStream("/WEB-INF/classes/testfile.txt");
+        InputStream file = getServletContext().getResourceAsStream("/WEB-INF/testfile.txt");
         if(file == null){
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             return;
